@@ -1,4 +1,4 @@
-# Convertisseur FCFA ↔ Devises
+# Devises
 
 ## Description
 Application web permettant de convertir un montant entre le FCFA et différentes devises (EUR, USD) en utilisant des taux de change en temps réel via une API externe.  
