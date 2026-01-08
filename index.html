@@ -8,7 +8,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
+        <div class="container">
+        <header>
+            <h1>Convertisseur</h1>
+            <p>Convertissez facilement entre le FCFA et d'autres devises</p>
+        </header>
+        
+        <main>
+            <div class="converter">
+                <div class="input-group">
+                    <input type="number" id="amount" placeholder="Montant" min="0" step="0.01">
+                    <select id="from-currency">
+                        <option value="XOF">FCFA (XOF)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="USD">Dollar US (USD)</option>
+                    </select>
+                </div>
+                
+                <div class="swap-btn">
+                    <button id="swap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 17L20 13M20 13L16 9M20 13H4M8 7L4 11M4 11L8 15M4 11H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="result" placeholder="Résultat" readonly>
+                    <select id="to-currency">
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="XOF" selected>FCFA (XOF)</option>
+                        <option value="USD">Dollar US (USD)</option>
+                    </select>
+                </div>
+                
+                <div class="rate-info" id="rate-info">
+                    Taux de change : 1 EUR = 655.957 XOF
+                </div>
+            </div>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
